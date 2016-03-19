@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Genrell -->
+    <string name="app_name">WorkoutPlanner</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="cancel">Abbrechen</string>
+
+    <!-- MainTab -->
+    <string name="workout_mainTab">Training</string>
+    <string name="plan_mainTab">Plan</string>
+    <string name="you_mainTab">Du</string>
+    <string name="success_mainTab">Erfolg</string>
+
+    <!-- YouActivity -->
+    <string name="armCircumference_YouMain">Armumfang:</string>
+    <string name="breastCircumference_YouMain">Brustumfang:</string>
+    <string name="legCircumference_YouMain">Beinumfang:</string>
+    <string name="currPic_YouMain">Aktuelles Bild:</string>
+    <string name="inch_YouMain">cm</string>
+    <string name="check_message_YouMain">Willst du deine Eingaben abschicken??</string>
+    <string name="check_title_YouMain">Du bist noch nicht fertig mit den Eingaben!</string>
+    <string name="take_photo_YouMain">Foto Aufnehmen</string>
+    <string name="select_photo_YouMain">Foto aus Bibliothek</string>
+    <string name="add_photo_YouMain">Foto hinzufügen</string>
+
+    <!-- Plan -->
+    <string name="plan_overview">Plan Überblick</string>
+
+    <!-- CreatePlan -->
+    <string name="title_CreatePlan">Plan erstellen</string>
+
+</resources>

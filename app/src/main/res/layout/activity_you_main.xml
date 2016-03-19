@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6a6a6a">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativ_YouMain">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/verticalLay_YouMain">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/armCircumference_YouMain"
+                    android:id="@+id/lblArmCircumference_YouMain"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#e2e0e0"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/tbxArmCircumference_YouMain"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/inch_YouMain"
+                    android:id="@+id/lblArmCM_YouMain"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#e2e0e0"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/breastCircumference_YouMain"
+                    android:id="@+id/lblBreastCircumference_YouMain"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#e2e0e0"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/tbxBreastCircumference_YouMain"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/inch_YouMain"
+                    android:id="@+id/lblBreastCM_YouMain"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#e2e0e0"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/legCircumference_YouMain"
+                    android:id="@+id/lblLegCircumference_YouMain"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#e2e0e0"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/tbxLegCircumference_YouMain"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/inch_YouMain"
+                    android:id="@+id/tbxLegCM_YouMain"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#e2e0e0"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imgSuccess_YouMain"
+            android:background="@drawable/pic_bg_youmain"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/verticalLay_YouMain"
+            android:layout_toEndOf="@+id/lblCurrPicture_YouMain"
+            android:src="@drawable/photo_camera"
+            android:scaleType="centerCrop"
+            android:padding="50dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/currPic_YouMain"
+            android:id="@+id/lblCurrPicture_YouMain"
+            android:layout_marginLeft="15dp"
+            android:textColor="#e2e0e0"
+            android:textStyle="bold"
+            android:layout_marginBottom="69dp"
+            android:layout_alignBottom="@+id/imgSuccess_YouMain"
+            android:layout_alignParentStart="true"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

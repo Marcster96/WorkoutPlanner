@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_plan"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        card_view:cardCornerRadius="4dp"
+        android:background="#cacaca"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:elevation="5dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d9d9d9"
+            android:id="@+id/relativ_plan_item">
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:id="@+id/imgWorkoutImg_Plan"
+                android:background="#7f0000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Schultern / Rücken"
+                android:id="@+id/lblWorkout_Titel_Plan"
+                android:layout_alignTop="@+id/imgWorkoutImg_Plan"
+                android:layout_toEndOf="@+id/imgWorkoutImg_Plan"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Erstellt am: 09.03.2016"
+                android:id="@+id/lblWorkout_Create_At_Plan"
+                android:layout_below="@+id/lblWorkout_Titel_Plan"
+                android:layout_alignStart="@+id/lblWorkout_Titel_Plan"
+                android:layout_marginTop="2dp"
+                android:textColor="#ffffff" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnWorkout_Favorit_Plan"
+                android:src="@drawable/black_gray"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@+id/lblWorkout_Create_At_Plan" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

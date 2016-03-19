@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Genrell -->
+    <string name="app_name">WorkoutPlanner</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!-- Title -->
+    <string name="title_mainTab1">Workout</string>
+    <string name="title_mainTab2">Planner</string>
+
+    <!-- MainTab -->
+    <string name="workout_mainTab">Workout</string>
+    <string name="plan_mainTab">Plan</string>
+    <string name="you_mainTab">You</string>
+    <string name="success_mainTab">Success</string>
+
+    <!-- YouActivity -->
+    <string name="armCircumference_YouMain">Arm circumference:</string>
+    <string name="breastCircumference_YouMain">Breast circumference:</string>
+    <string name="legCircumference_YouMain">Leg circumference:</string>
+    <string name="currPic_YouMain">Current picture:</string>
+    <string name="inch_YouMain">in</string>
+    <string name="check_YouMain">Check</string>
+    <string name="check_message_YouMain">Do you want to submit?</string>
+    <string name="check_title_YouMain">You\'re not done with the inputs</string>
+    <string name="take_photo_YouMain">Take Photo</string>
+    <string name="select_photo_YouMain">Choose from Library</string>
+    <string name="add_photo_YouMain">Add Photo</string>
+
+    <!-- RESOURCE ID-->
+
+    <string name="VALUE_PLAN">plan_value</string>
+    <string name="ID_PLAN">plan_id</string>
+
+    <!-- Plan -->
+    <string name="plan_overview">Plan Overview</string>
+
+    <!-- CreatePlan -->
+    <string name="title_CreatePlan">Create Plan</string>
+
+</resources>
