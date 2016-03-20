@@ -35,10 +35,7 @@
         <activity
             android:name=".Plan.Plan"
             android:label="@string/plan_overview"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".Plan.CreatePlan"
-            android:label="@string/title_CreatePlan"
-            android:parentActivityName=".Plan.Plan"></activity>
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

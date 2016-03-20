@@ -20,6 +20,7 @@ import com.parse.ParseUser;
 import java.util.List;
 
 import de.dev_bros.workoutplaner.MainTabs.MainTab;
+import de.dev_bros.workoutplaner.Plan.Plan;
 import de.dev_bros.workoutplaner.Tools.ViewPagerAdapter;
 import de.dev_bros.workoutplaner.You.You;
 
@@ -35,50 +36,10 @@ public class MainActivity extends AppCompatActivity implements MainTab.OnControl
         setContentView(R.layout.activity_main);
 
 
-        setupParseUser();
         setupTabLayout();
-
-        savePlansInBackground();
-
     }
 
-    private void savePlansInBackground() {
 
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Plans");
-        query.whereEqualTo("User", ParseUser.getCurrentUser().getUsername());
-        query.orderByAscending("createdAt");
-        query.findInBackground(new FindCallback<ParseObject>() {
-            @Override
-            public void done(List<ParseObject> objects, ParseException e) {
-                if (e == null) {
-                    Log.i("App", String.valueOf(objects.size()));
-                    for (ParseObject object : objects) {
-                        try {
-                            object.pin("Plans");
-                        } catch (ParseException e1) {
-                            e1.printStackTrace();
-                        }
-                    }
-                } else {
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
-
-    private void setupParseUser() {
-        ParseAnonymousUtils.logIn(new LogInCallback() {
-            @Override
-            public void done(ParseUser user, ParseException e) {
-                if (e != null) {
-                    Log.d("MyApp", "Anonymous login failed.");
-                } else {
-                    Log.d("MyApp", "Anonymous user logged in.");
-                }
-            }
-        });
-
-    }
 
     private void setupTabLayout() {
         tabLayout = (TabLayout) findViewById(R.id.tabs);
@@ -189,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements MainTab.OnControl
         }
 
         if(MainTab.PLAN_FRAME == tag){
-
+            startActivity(new Intent(this,Plan.class));
         }
 
         if(MainTab.SUCCESS_FRAME== tag){

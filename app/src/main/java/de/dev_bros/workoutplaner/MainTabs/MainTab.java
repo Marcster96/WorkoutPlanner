@@ -40,7 +40,7 @@ public class MainTab extends Fragment implements View.OnClickListener {
         for(RelativeLayout rel : relativeLayouts){
 
             if(rel == v){
-                mCallback.OnControlButtonClicked((Integer) rel.getTag());
+                mCallback.OnControlButtonClicked(Integer.parseInt(String.valueOf(rel.getTag())));
                 return;
             }
 

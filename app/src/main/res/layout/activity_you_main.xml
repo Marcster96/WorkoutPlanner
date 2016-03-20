@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#6a6a6a">
+    android:layout_height="match_parent">
 
     <include
         android:id="@+id/tool_bar"
@@ -36,7 +35,7 @@
                     android:text="@string/armCircumference_YouMain"
                     android:id="@+id/lblArmCircumference_YouMain"
                     android:layout_marginLeft="15dp"
-                    android:textColor="#e2e0e0"
+                    android:textColor="#626262"
                     android:textStyle="bold"
                     android:textSize="18dp" />
 
@@ -48,7 +47,7 @@
                     android:id="@+id/tbxArmCircumference_YouMain"
                     android:layout_marginLeft="30dp"
                     android:layout_marginBottom="5dp"
-                    android:textColor="#ffffff" />
+                    android:textColor="#626262" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -57,7 +56,7 @@
                     android:text="@string/inch_YouMain"
                     android:id="@+id/lblArmCM_YouMain"
                     android:layout_marginLeft="15dp"
-                    android:textColor="#e2e0e0"
+                    android:textColor="#626262"
                     android:textStyle="bold"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -76,7 +75,7 @@
                     android:text="@string/breastCircumference_YouMain"
                     android:id="@+id/lblBreastCircumference_YouMain"
                     android:layout_marginLeft="15dp"
-                    android:textColor="#e2e0e0"
+                    android:textColor="#626262"
                     android:textStyle="bold"
                     android:textSize="18dp" />
 
@@ -88,7 +87,7 @@
                     android:id="@+id/tbxBreastCircumference_YouMain"
                     android:layout_marginLeft="30dp"
                     android:layout_marginBottom="5dp"
-                    android:textColor="#ffffff" />
+                    android:textColor="#626262" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -97,7 +96,7 @@
                     android:text="@string/inch_YouMain"
                     android:id="@+id/lblBreastCM_YouMain"
                     android:layout_marginLeft="15dp"
-                    android:textColor="#e2e0e0"
+                    android:textColor="#626262"
                     android:textStyle="bold"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -115,9 +114,10 @@
                     android:text="@string/legCircumference_YouMain"
                     android:id="@+id/lblLegCircumference_YouMain"
                     android:layout_marginLeft="15dp"
-                    android:textColor="#e2e0e0"
+
                     android:textStyle="bold"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:textColor="#626262" />
 
                 <EditText
                     android:layout_width="50dp"
@@ -127,7 +127,7 @@
                     android:id="@+id/tbxLegCircumference_YouMain"
                     android:layout_marginLeft="30dp"
                     android:layout_marginBottom="5dp"
-                    android:textColor="#ffffff" />
+                    android:textColor="#626262" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -136,7 +136,7 @@
                     android:text="@string/inch_YouMain"
                     android:id="@+id/tbxLegCM_YouMain"
                     android:layout_marginLeft="15dp"
-                    android:textColor="#e2e0e0"
+                    android:textColor="#626262"
                     android:textStyle="bold"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -162,7 +162,7 @@
             android:text="@string/currPic_YouMain"
             android:id="@+id/lblCurrPicture_YouMain"
             android:layout_marginLeft="15dp"
-            android:textColor="#e2e0e0"
+            android:textColor="#626262"
             android:textStyle="bold"
             android:layout_marginBottom="69dp"
             android:layout_alignBottom="@+id/imgSuccess_YouMain"
