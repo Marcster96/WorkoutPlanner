@@ -58,12 +58,13 @@
                 android:textColor="#ffffff" />
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:id="@+id/btnWorkout_Favorit_Plan"
                 android:src="@drawable/black_gray"
                 android:layout_alignParentBottom="true"
-                android:layout_alignEnd="@+id/lblWorkout_Create_At_Plan" />
+                android:layout_alignEnd="@+id/lblWorkout_Create_At_Plan"
+                android:scaleType="fitCenter" />
 
 
         </RelativeLayout>
