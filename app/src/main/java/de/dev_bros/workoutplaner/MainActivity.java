@@ -1,16 +1,13 @@
 package de.dev_bros.workoutplaner;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
-
 
 import com.parse.FindCallback;
 import com.parse.LogInCallback;
@@ -19,13 +16,10 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
-import com.parse.SignUpCallback;
 
 import java.util.List;
 
 import de.dev_bros.workoutplaner.MainTabs.MainTab;
-import de.dev_bros.workoutplaner.Plan.Plan;
-import de.dev_bros.workoutplaner.Tools.UtilityBox;
 import de.dev_bros.workoutplaner.Tools.ViewPagerAdapter;
 import de.dev_bros.workoutplaner.You.You;
 
@@ -34,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements MainTab.OnControl
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private ViewPagerAdapter viewPagerAdapter;
-    private Typeface myTypeface; // Font
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -196,7 +189,7 @@ public class MainActivity extends AppCompatActivity implements MainTab.OnControl
         }
 
         if(MainTab.PLAN_FRAME == tag){
-            startActivity(new Intent(getApplicationContext(), Plan.class));
+
         }
 
         if(MainTab.SUCCESS_FRAME== tag){
